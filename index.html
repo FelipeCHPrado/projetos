@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <title>DEV BURGUER</title>
+</head>
+
+<body>
+
+    <header class="w-full h-[420px] bg-zinc-900 content-center bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/hamb-1.png" alt="logo"
+                class="content-center w-32 h-32 rounded-full shadow-lg hover:scale-110" />
+
+            <h1 class="font-bold mt-4 mb-2 text-3xl text-center text-white">Dev Burguer</h1>
+            <h2 class="text-white">Rua Júlio de Castilhos, 991 - B. São José</h2>
+            <h2 class="text-white mb-3">Flores da Cunha - RS</h2>
+
+            <div class="bg-green-500 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="font-medium text-white">Seg a Dom - 18:00 às 22:00</span>
+            </div>
+        </div>
+    </header>
+
+    <h2 class="text-center mt-5 mb-6 font-bold text-2xl md:text-3xl">
+        Conheça nosso cardápio
+    </h2>
+
+    <div id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 ">
+
+            <div class="flex gap-2">
+                <img src="./assets/hamb-1.png" alt="smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Smash Burguer</p>
+                    <p class="text-sm text-justify">
+                        Saboreie nosso Smash Burger, feito com carne bovina de alta qualidade, prensada na chapa para
+                        uma crosta crocante e um centro suculento. Servido em pão de brioche tostado, com queijo
+                        derretido, alface, tomate e molho especial. Uma experiência única em cada mordida!
+                    </p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 15,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Smash Burguer"
+                            data-price="15.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/hamb-2.png" alt="smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Duplo Burguer</p>
+                    <p class="text-sm text-justify">
+                        Delicie-se com nosso Hambúrguer Duplo, feito com dois suculentos hambúrgueres de
+                        carne bovina de alta qualidade, cobertos com queijo derretido. Servido em pão macio, com alface
+                        crocante, tomate fresco e nosso molho especial. Uma explosão de sabor em cada mordida!
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 32,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Duplo Burguer"
+                            data-price="32.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/hamb-3.png" alt="smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Bacon Burguer</p>
+                    <p class="text-sm text-justify">
+                        Delicie-se com nosso Bacon Burger, feito com um suculento hambúrguer de carne bovina, coberto
+                        com fatias crocantes de bacon e queijo derretido. Servido em um pão macio, com alface fresca,
+                        tomate e nosso molho especial. Uma explosão de sabor em cada mordida!
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 28,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Bacon Burguer"
+                            data-price="28.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/hamb-4.png" alt="smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Salad Burguer</p>
+                    <p class="text-sm text-justify">
+                        Experimente nosso Salad Burger, feito com um suculento hambúrguer de carne
+                        bovina, coberto com alface crocante, tomate fresco, cebola roxa e picles. Servido em um pão
+                        macio com nosso molho especial. Uma opção leve e deliciosa!
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 25,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Salad Burguer"
+                            data-price="25.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Bebidas
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <div class="flex w-full gap-2">
+                <img src="./assets/refri-1.png" alt="smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div class="w-full">
+                    <p class="font-bold">Coca Lata</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca Lata"
+                            data-price="6.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex w-full gap-2">
+                <img src="./assets/refri-2.png" alt="smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div class="w-full">
+                    <p class="font-bold">Guaraná Lata</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana Lata"
+                            data-price="6.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] hidden items-center justify-center" id="cart-modal">
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="font-bold text-center text-2xl">Seu Carrinho</h2>
+
+            <div id="cart-items" class="justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de Entrega:</p>
+            <input type="text" placeholder="Digite o endereço de entrega aqui" id="address"
+                class="w-full border-2 rounded p-1 my-1">
+
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+            <div class="flex items-center justify-between w-full mt-5">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 rounded py-1">Finalizar Pedido</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="bg-red-600 w-full opacity-90 py-3 text-center content-center fixed bottom-0 z-40" id="footer">
+        <button class="text-white font-bold text-2xl" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Ver meu carrinho
+            <i class="ml-2 fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
